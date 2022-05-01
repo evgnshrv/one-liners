@@ -54,8 +54,23 @@ $report
 
 ### Windows
 
+Advanced User Accounts panel:  
+```netplwiz```
+
 ***
 
 ## Short manuals
 
+### Linux
 
+How to make a connection from a remote network to both network interfaces of the server without configuring asynchronous routing:  
+```sysctl -w net.ipv4.conf.all.rp_filter=2```
+- ```Permanent setting in /etc/sysctl.conf```
+- ```Additional information: https://access.redhat.com/solutions/53031```
+
+### VMware
+
+### Windows
+
+How To Install Windows 11 Without An Internet Connection:  
+```"Let’s Connect You To A Network" page ➜ "Shift" + "F10" ➜ Command Prompt ➜ kill "Network Connection Flow" process (taskkill /F /IM oobenetworkconnectionflow.exe)```
