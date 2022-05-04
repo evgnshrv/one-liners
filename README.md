@@ -1,8 +1,12 @@
-## One-liners and Short Manuals
+# One-liners and Short Manuals
 
 In this repository I have collected useful one-liners and short manuals.
 
 ***
+
+# Table of Contents
+1. [One-liners](#One-liners)
+2. [Short manuals](#Short-manuals)
 
 ## One-liners
 
@@ -74,3 +78,13 @@ How to make a connection from a remote network to both network interfaces of the
 
 How To Install Windows 11 Without An Internet Connection:  
 ```"Let’s Connect You To A Network" page ➜ "Shift" + "F10" ➜ Command Prompt ➜ kill "Network Connection Flow" process (taskkill /F /IM oobenetworkconnectionflow.exe)```
+
+How to change my password inside RDP session:  
+``` Ctrl + Alt + End inside RDP session ➜ Change a password```
+
+How to change my password inside RDP session inside another RDP session:  
+- ```Setup: My PC ➜ The 1st RDP session ➜ The 2nd RDP session```  
+- ```Task: Change my password in the 2nd RDP session```  
+```Method 1. Run PowerShell ➜ (New-Object -COM Shell.Application).WindowsSecurity() ➜ Change a password```  
+```Method 2. Run the On-Screen Keyboard (osk.exe) ➜ hold Ctrl + Alt on the physical keyboard ➜ click on the Del key in the on screen keyboard ➜ Change a password```  
+
