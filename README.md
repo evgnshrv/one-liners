@@ -16,7 +16,7 @@ Show audit.log in readable form:
 ```sudo cat /var/log/audit/audit.log | perl -ne 'chomp; if ( /(.*msg=audit\()(\d+)(\.\d+:\d+.*)/ ) { $td = scalar localtime $2; print "$1$td$3\n"; }'```
 
 Count number of clients connected to Chrony NTP server:  
-```chronyc -a -n -m clients |wc -l```
+```chronyc -a -n -m clients | wc -l```
 
 Running a command on a group of servers with ansible:  
 ```ansible -m shell -a '<command>' <group_hosts_name> --ask-pass```
@@ -24,7 +24,7 @@ Running a command on a group of servers with ansible:
 Rescan all drives to mount a new drive:  
 ```for host in /sys/class/scsi_host/*; do echo "- - -" | sudo tee $host/scan; ls /dev/sd* ; done```
 
-Disk Speed Test:  
+Disk write speed test:   
 ```sync; date; dd if=/dev/zero of=/data/tempfile bs=10M count=5000; sync; date```
 
 ### VMware
@@ -59,7 +59,7 @@ $report
 ### Windows
 
 Advanced User Accounts panel:  
-```netplwiz```
+```Run PowerShell ➜ netplwiz```
 
 ***
 
@@ -77,14 +77,17 @@ How to make a connection from a remote network to both network interfaces of the
 ### Windows
 
 How To Install Windows 11 Without An Internet Connection:  
-```"Let’s Connect You To A Network" page ➜ "Shift" + "F10" ➜ Command Prompt ➜ kill "Network Connection Flow" process (taskkill /F /IM oobenetworkconnectionflow.exe)```
+```"Let’s Connect You To A Network" page ➜ Shift + F10 ➜ Command Prompt ➜ kill "Network Connection Flow" process (taskkill /F /IM oobenetworkconnectionflow.exe)```
 
 How to change my password inside RDP session:  
 ``` Ctrl + Alt + End inside RDP session ➜ Change a password```
 
 How to change my password inside RDP session inside another RDP session:  
 - ```Setup: My PC ➜ The 1st RDP session ➜ The 2nd RDP session```  
-- ```Task: Change my password in the 2nd RDP session```  
+- ```Task: Change my password in the 2nd RDP session```
+
 ```Method 1. Run PowerShell ➜ (New-Object -COM Shell.Application).WindowsSecurity() ➜ Change a password```  
 ```Method 2. Run the On-Screen Keyboard (osk.exe) ➜ hold Ctrl + Alt on the physical keyboard ➜ click on the Del key in the on screen keyboard ➜ Change a password```  
 
+How to delete multiple items in Visual Studio Code:  
+```Select the code ➜ Ctrl + Shift + L ➜ multiple cursors ➜ delete (or another action) items```
