@@ -5,12 +5,18 @@ In this repository I have collected useful one-liners and short manuals.
 ***
 
 # Table of Contents
-1. [One-liners](#One-liners)
-2. [Short manuals](#Short-manuals)
+1. [One-liners](#One-liners)  
+  1.1. [Linux one-liners](##Linux%20one-liners)  
+  1.2. [VMware one-liners](##VMware%20one-liners)  
+  1.3. [Windows one-liners](##Windows%20one-liners)  
+2. [Short manuals](#Short-manuals)  
+  2.1. [Linux short manuals](##Linux%20short%20manuals)  
+  2.2. [VMware short manuals](##VMware%20short%20manuals)  
+  2.3. [Windows short manuals](##Windows%20short%20manuals)
 
 ## One-liners
 
-### Linux
+### Linux one-liners
 
 Show audit.log in readable form:  
 ```sudo cat /var/log/audit/audit.log | perl -ne 'chomp; if ( /(.*msg=audit\()(\d+)(\.\d+:\d+.*)/ ) { $td = scalar localtime $2; print "$1$td$3\n"; }'```
@@ -27,7 +33,7 @@ Rescan all drives to mount a new drive:
 Disk write speed test:   
 ```sync; date; dd if=/dev/zero of=/data/tempfile bs=10M count=5000; sync; date```
 
-### VMware
+### VMware one-liners
 
 Find all VM snapshots:  
 ```get-vm | get-snapshot | Select-Object -Property vm,created,sizeGB,name,description | Export-Csv -Path C:\Users\$env:username\Desktop\snapshots.csv```
@@ -56,7 +62,7 @@ Get-VM | Get-View | %{
 $report
 ```
 
-### Windows
+### Windows one-liners
 
 Advanced User Accounts panel:  
 ```Run PowerShell ➜ netplwiz```
@@ -65,18 +71,18 @@ Advanced User Accounts panel:
 
 ## Short manuals
 
-### Linux
+### Linux short manuals
 
 How to make a connection from a remote network to both network interfaces of the server without configuring asynchronous routing:  
 ```sysctl -w net.ipv4.conf.all.rp_filter=2```
 - ```Permanent setting in /etc/sysctl.conf```
 - ```Additional information: https://access.redhat.com/solutions/53031```
 
-### VMware
+### VMware short manuals
 
-### Windows
+### Windows short manuals
 
-How To Install Windows 11 Without An Internet Connection:  
+How to install Windows 11 without an Internet connection:  
 ```"Let’s Connect You To A Network" page ➜ Shift + F10 ➜ Command Prompt ➜ kill "Network Connection Flow" process (taskkill /F /IM oobenetworkconnectionflow.exe)```
 
 How to change my password inside RDP session:  
