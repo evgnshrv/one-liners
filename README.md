@@ -5,14 +5,14 @@ In this repository I have collected useful one-liners and short manuals.
 ***
 
 # Table of Contents
-1. [One-liners](#One-liners)  
+1. [One-liners](#one-liners)  
   1.1. [Linux one-liners](#linux-one-liners)  
-  1.2. [VMware one-liners](##VMware%20one-liners)  
-  1.3. [Windows one-liners](##Windows%20one-liners)  
-2. [Short manuals](#Short-manuals)  
-  2.1. [Linux short manuals](##Linux%20short%20manuals)  
-  2.2. [VMware short manuals](##VMware%20short%20manuals)  
-  2.3. [Windows short manuals](##Windows%20short%20manuals)
+  1.2. [VMware one-liners](#vmware-one-liners)  
+  1.3. [Windows one-liners](#windows-one-liners)  
+2. [Short manuals](#short-manuals)  
+  2.1. [Linux short manuals](#linux-short-manuals)  
+  2.2. [VMware short manuals](#vmware-short-manuals)  
+  2.3. [Windows short manuals](#windows-short-manuals)
 
 ## One-liners
 
