@@ -78,7 +78,8 @@ How to make a connection from a remote network to both network interfaces of the
 - ```Permanent setting in /etc/sysctl.conf```
 - ```Additional information: https://access.redhat.com/solutions/53031```
 
-### VMware short manuals
+### VMware short manuals  
+```¯\_(ツ)_/¯```
 
 ### Windows short manuals
 
@@ -95,5 +96,5 @@ How to change my password inside RDP session inside another RDP session:
 ```Method 1. Run PowerShell ➜ (New-Object -COM Shell.Application).WindowsSecurity() ➜ Change a password```  
 ```Method 2. Run the On-Screen Keyboard (osk.exe) ➜ hold Ctrl + Alt on the physical keyboard ➜ click on the Del key in the on screen keyboard ➜ Change a password```  
 
-How to delete multiple items in Visual Studio Code:  
+How to delete (or another action) multiple items in Visual Studio Code:  
 ```Select the code ➜ Ctrl + Shift + L ➜ multiple cursors ➜ delete (or another action) items```
